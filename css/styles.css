@@ -1,0 +1,521 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-block-start: 70px;
+    margin-block-end: 20px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #bfbfbf;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px;
+}
+
+.table-2,
+.table-3 {
+    overflow: hidden;
+}
+
+.table-3 {
+    margin-bottom: 97px;
+}
+
+thead {
+    color: #fff;
+    font-weight: bold;
+    background-color: #2a3644;
+    border-color: #3f4751;
+}
+
+thead th {
+    padding: 15px 30px 12px 30px;
+}
+
+thead th+th {
+    border-left: solid 1px #3f4852;
+}
+
+th a {
+    color: #fff;
+}
+
+
+tbody td {
+    padding: 15px 30px 12px 30px;
+    color: #2a3644;
+}
+
+tbody td+td {
+    border-left: solid 1px #bfc1c1;
+}
+
+tbody tr+tr {
+    border-top: solid 1px #bfc1c1;
+}
+
+.table-2 tbody tr:nth-child(1n),
+.table-3 tbody tr:nth-child(1n) {
+    background-color: #f2f2f2;
+}
+
+.table-2 tbody tr:nth-child(2n),
+.table-3 tbody tr:nth-child(2n) {
+    background-color: #e8e8e8;
+}
+
+.table-2 tbody tr:hover,
+.table-3 tbody tr:hover {
+    background-color: #bfc1c1;
+}
+
+.year th {
+    border-left: solid 1px #3f4852;
+    border-top: solid 1px #3f4852;
+}
+
+.number-column {
+    width: 5%;
+    text-align: center;
+}
+
+.name-column {
+    width: 50%;
+    text-align: left;
+}
+
+.tar {
+    text-align: right;
+}
+
+nav ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* nav-menu-food */
+.menu-food > ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    background-color: #2a3644;
+    border-radius: 3px;
+}
+
+.menu-food > ul > li {
+    position: relative;
+    display: block;
+}
+
+.menu-food > ul > li > a {
+    color: #fff;
+    display: block;
+    padding: 13.5px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #2a3644;
+}
+.menu-food > ul > li > a {
+    border-left: 1px solid #3f4751;
+    border-right: 1px solid #3f4751;
+}
+.menu-food > ul > li:first-child > a {
+    border-left: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.menu-food > ul > li:last-child > a {
+    margin-right: -0.5px;
+    border-right: none;
+    border-radius: 0 3px 3px 0;
+}
+
+.menu-food > ul > li:last-child > ul {
+    margin-left: -89px;
+}
+
+.menu-food > ul > li > ul {
+    position: absolute;
+    z-index: 1;
+}
+
+.menu-food > ul > li:hover > a {
+    color: #fd8612;
+    background-color: #3f4852;
+}
+
+.menu-food > ul > li:hover > .submenu {
+    display: block;
+}
+
+.submenu {
+    padding: 5px 0 0 0;
+    color: transparent;
+    display: none;
+    width: 210px;
+}
+
+.submenu a {
+    display: block;
+    padding: 12px 20px 10px 20px;
+    color: #2a3644;
+    background-color: #d2d4d5;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.submenu > li + li > a {
+    border-top: 1px solid #b9bdc1;
+}
+
+.submenu > li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+
+.submenu > li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+
+.submenu li:hover > a {
+    color: #fd8612;
+    background-color: #2a3644;
+}
+
+/* table menu-tech */ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px;
+}
+
+thead {
+    color: #fff;
+    font-weight: bold;
+    background-color: #2a3644;
+    border-color: #3f4751;
+}
+
+thead th {
+    padding: 15px 30px 12px 30px;
+}
+thead th + th {
+    border-left: solid 1px #3f4852;
+}
+
+th a {
+    color: #fff;
+}
+
+.menu-tech {
+    margin-top: 40px;
+    text-align: center;
+    border: none;
+    border-collapse: collapse;
+}
+
+.menu-tech th {
+    position: relative;
+}
+
+.menu-tech th > a:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-tech th:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+.menu-tech th:last-child {
+    border-radius: 0 3px 3px 0;
+}
+
+.menu-tech th:hover {
+    background-color: #3f4852;
+}
+
+.menu-tech th:hover>a {
+    color: #fd8612;
+}
+
+.menu-tech th > ul {
+    margin-top: 12px;
+    padding-left: 0px;
+}
+
+.menu-tech th:hover > div > ul {
+    position: absolute;
+    display: block;
+    z-index: 2;
+}
+
+nav.menu-tech a:first-child {
+    border-left: none;
+}
+nav.menu-tech a:last-child {
+    border-right: none;
+}
+
+.menu-tech .submenu {
+    margin-left: -31px;
+}
+
+.submenu > li:hover > .submenu {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.menu-tech ul.submenu {
+    margin-top: 12px;
+}
+
+.menu-tech .submenu a {
+    text-align: left;
+}
+
+.submenu > .position-relative > .second-submenu {
+    margin: 1px 0 0 210px;
+    padding: 0 0 0 5px;
+}
+
+.submenu > .position-relative > .third-submenu {
+    margin: 1px 0 0 -215px;
+    padding: 0 5px 0 0;
+}
+
+.submenu .second-submenu {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+}
+
+.submenu .third-submenu {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+}
+
+/* nav menu-village */
+.navigation-3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-radius: 3px;
+    background-color: #2a3644;
+}
+
+.menu-village > ul {
+    display: flex;
+    margin: 0;
+}
+
+.menu-village > ul > li {
+    position: relative;
+    display: block;
+}
+
+.menu-village > ul > li > a {
+    color: #fff;
+    display: block;
+    padding: 13.5px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #2a3644;
+}
+
+.menu-village > ul > li > a {
+    border-left: 1px solid #3f4751;
+    border-right: 1px solid #3f4751;
+}
+
+.menu-village > ul > li:first-child > a {
+    border-left: none;
+    border-radius: 3px 0 0 3px;
+}
+
+.menu-village > ul > li:last-child > a {
+    margin-right: -0.5px;
+    border-right: none;
+    border-radius: 0 3px 3px 0;
+}
+
+.menu-village > ul > li > ul {
+    position: absolute;
+    z-index: 3;
+}
+
+.menu-village > ul > li:hover > a {
+    color: #fd8612;
+    background-color: #3f4852;
+}
+
+.menu-village > ul > li:hover .submenu {
+    display: block;
+}
+
+.submenu > li + li > a {
+    border-top: 1px solid #b9bdc1;
+}
+
+.submenu > li:first-child > a {
+    border-radius: 3px 3px 0 0;
+}
+
+.submenu > li:last-child > a {
+    border-radius: 0 0 3px 3px;
+}
+
+.submenu li:hover > a {
+    color: #fd8612;
+    background-color: #2a3644;
+}
+
+.duble-submenu {
+    display: flex;
+    overflow: hidden;
+}
+
+.duble-submenu .submenu li a {
+    border-radius: 0;
+}
+
+.menu-village .home {
+    padding-left: 60px;
+}
+
+.home:before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    width: 16px;
+    height: 13px;
+    background: url(../img/sprite.png) no-repeat 0 0;
+}
+
+.social {
+    display: block;
+    padding-right: 30px;
+    margin: 0;
+}
+
+.social li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.social li {
+    padding: 11.5px 0 11.5px 0;
+}
+
+.social a {
+    display: inline-block;
+    background: url(../img/sprite.png) no-repeat;
+}
+
+a.fb {
+    width: 9px;
+    height: 18px;
+    background-position: -18px 0;
+}
+
+a.fb:hover {
+    background-position: -18px -20px;
+}
+
+a.tw {
+    width: 16px;
+    height: 14px;
+    background-position: -45px 0;
+}
+
+a.tw:hover {
+    background-position: -45px -20px;
+}
+
+a.ig {
+    width: 14px;
+    height: 16px;
+    background-position: -29px 0;
+}
+
+a.ig:hover {
+    background-position: -29px -20px;
+}
+
+.duble-submenu {
+    margin-left: -1px;
+    padding-top: 5px;
+}
+
+.duble-submenu ul {
+    padding-top: 0;
+}
+
+.duble-submenu li:first-child {
+    padding-top: 0;
+    background-color: #d2d4d5;
+    border-radius: 3px 0 0 3px;
+    overflow: hidden;
+}
+
+.duble-submenu li:last-child {
+    padding-top: 0;
+    background-color: #d2d4d5;
+    border-radius: 0 3px 3px 0;
+    overflow: hidden;
+}
+
+a.brr {
+    border-right: 1px solid #b9bdc1;
+}
+
+a.brb {
+    border-bottom: 1px solid #b9bdc1;
+}
+
+.submenu > li:first-child {
+    border-radius: 0;
+}
+
+.submenu > li:last-child {
+    border-radius: 0;
+}
+
